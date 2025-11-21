@@ -1,0 +1,173 @@
+/* static/style.css */
+body.index{
+    background-image: url("bg.jpg");
+    font-family: Didot;
+}
+body {
+    font-family: Didot;
+    line-height: 1.8;
+    color: #080f13;
+    margin: 0;
+    /* Specify the path to your new background image */
+    background-image: url('/static/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container {
+    margin-top: 2em;
+}
+
+.navbar {
+    margin-bottom: 2em;
+}
+
+.form-group {
+    margin-bottom: 1.5em;
+}
+
+textarea {
+    resize: none;
+}
+
+.btn-outline-primary {
+    background-color: #592dc9;
+    color: #fff;
+    border-color: #3153b1;
+}
+
+.btn-outline-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Add custom styles for beautiful design */
+.text-center {
+    text-align: center;
+}
+
+.btn-lg {
+    font-size: 1.2rem;
+}
+
+/* Additional styles specific to index.html */
+#exampleFormControlTextarea1 {
+    width: 100%;
+}
+
+/* Additional styles specific to summary.html */
+.container.text-center p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+/* Custom styles for the "Enter Your Text Below To Be Summarized" label */
+.form-group label {
+    font-size: 1.9rem; /* Increase the font size */
+    color: #fafcf8; /* Change the text color to blue (#007bff) */
+    font-weight: bold; /* Add bold font weight */
+}
+
+/* Custom styles for "Summary Generator" text */
+.navbar {
+    padding: 30px; /* Increase the padding to increase the background color size */
+    margin-bottom: 2em;
+}
+.navbar-brand {
+    font-size: 4rem; /* Increase the font size */
+    font-weight: bold; /* Add bold font weight */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    /* Add animation */
+    animation-name: scaleUp;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+.box {
+    padding: 1.5rem;
+    background-color: #f8f9fa; /* Light gray background color */
+    border: 1px solid #ced4da; /* Gray border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow */
+    margin-bottom: 1.5rem; /* Margin between the boxes */
+}
+
+h2.original-heading {
+    background-color: #0da130;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Custom background color for the 'Summary' heading */
+h2.summary-heading {
+    background-color: #1976d2;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+.btn-word-count {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.btn-word-count {
+    font-size: 1rem;
+    padding: 0.375rem 0.75rem;
+    margin-top: 1.5rem;
+}
+
+/* Add your custom styles here */
+
+.accuracy-bar {
+    height: 30px;
+    background-color: #e2e2e2;
+    margin-top: 10px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.accuracy-level {
+    height: 100%;
+    border-radius: 5px;
+    background-color: hsl(120, 53%, 45%);
+    transition: width 0.5s;
+    width: 0;
+}
+
+.accuracy-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+    font-weight: bold;
+}
+
+.accuracy-graph {
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+
+
+
